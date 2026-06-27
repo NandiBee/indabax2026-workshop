@@ -163,6 +163,17 @@ p {
 
 
 
+img.example-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    display: block;
+}
+
 /* cards & cue cards */
 .card,
 .cue-card {
