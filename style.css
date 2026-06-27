@@ -1,38 +1,39 @@
 :root {
-    /* colours: default light theme */
-    --bg-primary: #f5f4f1;
+    /* colours: earthy custom light theme */
+    --bg-primary: #fdfbf7;
     --bg-secondary: #ffffff;
-    --bg-card: #ecebe6;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent: #7c3aed;
-    /* purple */
-    --accent-hover: #6d28d9;
-    --accent-secondary: #ea580c;
-    /* orange */
-    --border: #e2e8f0;
-    --success-bg: #dcfce7;
-    --success-text: #166534;
+    --bg-card: #f4f1eb;
+    --text-primary: #2b2826;
+    --text-secondary: #595552;
+    --accent: #c25934;
+    /* terracotta */
+    --accent-hover: #a34828;
+    --accent-secondary: #3d6a54;
+    /* sage green */
+    --border: #e6e2d8;
+    --success-bg: #e2ede7;
+    --success-text: #2c4d3d;
 
     /* typography */
-    --font-family: 'Outfit', sans-serif;
+    --font-heading: 'Lora', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
 [data-theme="dark"] {
-    /* colours: dark theme */
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-card: #334155;
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --accent: #a78bfa;
-    /* light purple */
-    --accent-hover: #8b5cf6;
-    --accent-secondary: #fb923c;
-    /* light orange */
-    --border: #334155;
-    --success-bg: #064e3b;
-    --success-text: #6ee7b7;
+    /* colours: earthy custom dark theme */
+    --bg-primary: #1a1918;
+    --bg-secondary: #242220;
+    --bg-card: #2f2d2b;
+    --text-primary: #fdfbf7;
+    --text-secondary: #b5b0aa;
+    --accent: #d9734e;
+    /* light terracotta */
+    --accent-hover: #e88d6b;
+    --accent-secondary: #5b8e75;
+    /* light sage green */
+    --border: #3d3a38;
+    --success-bg: #21352a;
+    --success-text: #83bca0;
 }
 
 * {
@@ -43,7 +44,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-body);
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -68,7 +69,8 @@ body {
 }
 
 .logo {
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 1.5rem;
     color: var(--accent);
     letter-spacing: -0.5px;
@@ -129,8 +131,9 @@ body {
 }
 
 h1 {
+    font-family: var(--font-heading);
     font-size: 2.2rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--accent);
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -158,14 +161,7 @@ p {
     font-size: 1.25rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-    border: 2px solid var(--border);
-}
+
 
 /* cards & cue cards */
 .card,
@@ -191,6 +187,7 @@ img {
 }
 
 .cue-card h2 {
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
