@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndabaX Responsible AI Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="logo">IndabaX</div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-moon">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-sun" style="display: none;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </header>
+
+    <main id="journey-container">
+        <!-- 1. Welcome page -->
+        <section class="step active" id="step-1">
+            <h1>RESPONSIBLE AI AND COMPUTING: WHAT IS YOUR TAKE?</h1>
+            <p>Welcome to our workshop!</p>
+            <img src="images/welcome_ai.png"
+                alt="Illustration representing Responsible AI and computing ethics in an African context">
+        </section>
+
+        <!-- 2. Introduction -->
+        <section class="step" id="step-2">
+            <h1>INTRODUCTION</h1>
+            <p>In this workshop, you'll debate what you think are the most important challenges for responsible AI and
+                computing. You'll find instructions here as we progress through the workshop. If you are confused, don't
+                hesitate to call <strong>'Helen'</strong>, <strong>'Nandi'</strong>, or <strong>'Simon'</strong> at the
+                top of your voice and one of us will come and help you.</p>
+        </section>
+
+        <!-- 3. Background 1 -->
+        <section class="step" id="step-3">
+            <h1>BACKGROUND: EXAMPLE 1</h1>
+            <p>In case you need it, here is the first example that we discussed at the start of the workshop. If you
+                don't, feel free to skip ahead.</p>
+            <div class="card bg-card">
+                <p><em>[Facilitators: This example discusses bias in healthcare algorithms deployed in low-resource
+                        settings, specifically how data unrepresentative of local populations can lead to
+                        misdiagnoses.]</em></p>
+            </div>
+        </section>
+
+        <!-- 4. Background 2 -->
+        <section class="step" id="step-4">
+            <h1>BACKGROUND: EXAMPLE 2</h1>
+            <p>In case you need it, here is the second example that we discussed at the start of the workshop. If you
+                don't, feel free to skip ahead.</p>
+            <div class="card bg-card">
+                <p><em>[Facilitators: This example focuses on data privacy and the exploitation of gig-economy data
+                        labellers in Southern Africa, exploring the ethics of AI supply chains.]</em></p>
+            </div>
+        </section>
+
+        <!-- 5. Activity 1a -->
+        <section class="step" id="step-5">
+            <h1>ACTIVITY 1</h1>
+            <p>This is where it all starts. The first thing that you need to do is simple. Find yourself a group of 3-5
+                people and interview each other round robin using the cue card on the next page.</p>
+            <img src="images/activity_one.png"
+                alt="Diverse group of people sitting in a circle interviewing each other">
+        </section>
+
+        <!-- 6. Activity 1b -->
+        <section class="step" id="step-6">
+            <div class="cue-card">
+                <h2>ACTIVITY 1 - CUE CARD</h2>
+                <ul class="questions">
+                    <li><strong>Question 1:</strong> What is your name and where are you from?</li>
+                    <li><strong>Question 2:</strong> Why are you here?</li>
+                    <li><strong>Question 3:</strong> What are you working on at the moment?</li>
+                </ul>
+            </div>
+            <p class="mt-4 text-center">When you are finished, you can pat yourselves on the back, chatter, and wait for
+                the next activity to start.</p>
+        </section>
+
+        <!-- 7. Activity 2a -->
+        <section class="step" id="step-7">
+            <h1>ACTIVITY 2</h1>
+            <p>In this part of the workshop, you'll need to put on your debate face. Return to your group and interview
+                each other round robin using the cue card on the next page.</p>
+            <img src="images/activity_two.png"
+                alt="Diverse group of people having a passionate debate about technology and ethics">
+        </section>
+
+        <!-- 8. Activity 2b -->
+        <section class="step" id="step-8">
+            <div class="cue-card accent">
+                <h2>ACTIVITY 2 - CUE CARD</h2>
+                <ul class="questions">
+                    <li><strong>Question 1:</strong> Based on your own experience in your field, what is one really
+                        important responsible AI and computing challenge that you can think of?</li>
+                    <li><strong>Question 2:</strong> Do you think this is especially different or important in the South
+                        African or African context?</li>
+                    <li><strong>Question 3:</strong> What do you think is the correct answer or best solution to this?
+                    </li>
+                    <li><strong>Question 4:</strong> What does everyone else in the group think?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 9. Activity 3a -->
+        <section class="step" id="step-9">
+            <h1>ACTIVITY 3</h1>
+            <p>In this third and final part of the workshop, you'll give us your take in a short video interview that
+                could appear in a new series of online lectures on responsible AI and computing. Skip ahead for the next
+                steps.</p>
+            <img src="images/activity_three.png" alt="Person being interviewed on camera with a microphone">
+        </section>
+
+        <!-- 10. Activity 3b -->
+        <section class="step" id="step-10">
+            <h1>ACTIVITY 3 - STEP 1</h1>
+            <div class="card">
+                <p class="font-bold">Decide how much data we're allowed to collect.</p>
+                <ol class="checklist">
+                    <li>Can we record your written answers?</li>
+                    <li>Can we record an audio clip of your interview?</li>
+                    <li>Can we record a video (with audio) of your interview?</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 11. Activity 3c -->
+        <section class="step" id="step-11">
+            <h1>ACTIVITY 3 - STEP 2</h1>
+            <p>Sign the release form by clicking the link below if you consent to the previous. Make sure that you
+                clearly indicate what you decided in STEP 1.</p>
+            <p>If we can record your written answers, fill in the Google Form by clicking the link below. This step is
+                especially important for us in the content development stage, so if you decided that we can collect your
+                written answers, please don't skip it!</p>
+            <a href="#" class="btn-external mt-4" target="_blank" rel="noopener noreferrer">
+                <span>📝 Open Google Form</span>
+            </a>
+        </section>
+
+        <!-- 12. Activity 3d -->
+        <section class="step" id="step-12">
+            <h1>ACTIVITY 3 - STEP 4</h1>
+            <div class="card success-card">
+                <p class="text-xl">If we can record a video and/or audio clip of your interview, then proceed to the
+                    interview section of the room and get ready for stardom! ✨</p>
+            </div>
+        </section>
+
+        <!-- 13. Goodbye -->
+        <section class="step" id="step-13">
+            <h1>THANK YOU!</h1>
+            <p>Thank you for participating in our workshop! We hope that you enjoyed it and learned about responsible AI
+                and computing by debating your opinions with your peers. Your input will help shape our new series of
+                online lectures on responsible AI and computing.</p>
+            <div class="contact-box mt-4">
+                <p>If you have any questions or concerns after the workshop, you can send an email to:</p>
+                <a href="mailto:Helen.Robertson@wits.ac.za" class="email-link">Helen.Robertson@wits.ac.za</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <div class="progress-container">
+            <button id="btn-back" class="nav-btn" disabled>Back</button>
+            <div class="progress-dots" id="progress-dots">
+                <!-- Dots injected via JS -->
+            </div>
+            <button id="btn-next" class="nav-btn primary">Next</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
