@@ -167,11 +167,16 @@ img.example-image {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    border: 1px solid var(--border);
     display: block;
+    /* Fade out the edges completely before hitting the box boundary */
+    -webkit-mask-image: radial-gradient(ellipse closest-side, black 40%, transparent 95%);
+    mask-image: radial-gradient(ellipse closest-side, black 40%, transparent 95%);
+}
+
+body:not([data-theme="dark"]) img.example-image {
+    filter: invert(1) hue-rotate(180deg);
 }
 
 /* cards & cue cards */

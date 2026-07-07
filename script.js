@@ -1,4 +1,4 @@
-const TOTAL_STEPS = 13;
+const TOTAL_STEPS = 14;
 let currentStep = 1;
 
 const btnNext = document.getElementById('btn-next');
